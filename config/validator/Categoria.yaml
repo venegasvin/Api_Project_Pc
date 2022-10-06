@@ -1,0 +1,5 @@
+App\Entity\Categoria:
+  properties:
+    categoria:
+      - NotBlank:
+          message: 'The name of categoria cannot be null or empty'
