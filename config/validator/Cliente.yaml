@@ -1,0 +1,18 @@
+App\Entity\Cliente:
+  properties:
+    nombre:
+      - NotBlank:
+          message: 'The name of client cannot be null or empty'
+    apellidos:
+      - NotBlank:
+          message: 'The surnames of client cannot be null or empty'
+    telefono:
+      - NotBlank:
+          message: 'The number phone of client cannot be null or empty'
+      - Regex:
+          pattern: '/^[0-9]+$/i'
+          match: true
+          message: 'Succesfully'
+      - Length:
+          max: 9
+          maxMessage: 'The phone can not have more than 9 numbers'

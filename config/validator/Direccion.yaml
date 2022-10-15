@@ -1,0 +1,12 @@
+# Ojo, no se ponen las variables que hacen referencia a relaciones
+# Y no es obligatorio poner todas las variables.
+App\Entity\Direccion:
+  properties:
+    calle:
+      - NotBlank:
+          message: 'The address cannot be null or empty'
+    numero:
+      - NotBlank: ~
+    cod_postal:
+      - NotBlank: ~
+

@@ -17,7 +17,7 @@ use Symfony\Component\Validator\Constraints\Json;
  * @Rest\Route("/categoria")
  */
 
-class CategoriaApiController extends AbstractFOSRestController
+class CategoriaController extends AbstractFOSRestController
 {
     // CRUD
     // Create, Update, Read, Delete
